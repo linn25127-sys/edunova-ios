@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "text": {},
+  "branding": {},
+  "announcement": "",
+  "tabs": ["home", "subjects", "classroom", "practice", "profile"],
+  "showPreview": true
+}

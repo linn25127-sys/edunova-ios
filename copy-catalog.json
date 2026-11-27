@@ -1,0 +1,1422 @@
+[
+  {
+    "key": "62fc42d5f5d9",
+    "group": "Achievements",
+    "defaultValue": " remaining"
+  },
+  {
+    "key": "3b9d45965832",
+    "group": "Achievements",
+    "defaultValue": "/ 100 correct"
+  },
+  {
+    "key": "a2360ff07bc3",
+    "group": "Achievements",
+    "defaultValue": "Answer 100 questions correctly to unlock the frame."
+  },
+  {
+    "key": "fef4a59300fa",
+    "group": "Achievements",
+    "defaultValue": "Select frame"
+  },
+  {
+    "key": "b0d0c143eab1",
+    "group": "Achievements",
+    "defaultValue": "Unlocked · choose your frame"
+  },
+  {
+    "key": "7d0202d958d5",
+    "group": "Achievements",
+    "defaultValue": "View frame"
+  },
+  {
+    "key": "1030d782cb4c",
+    "group": "Appearance",
+    "defaultValue": "3D career avatars"
+  },
+  {
+    "key": "7f7c33066764",
+    "group": "Appearance",
+    "defaultValue": "Animations"
+  },
+  {
+    "key": "8524af778d5d",
+    "group": "Appearance",
+    "defaultValue": "Book, drawer, quiz and frame motion"
+  },
+  {
+    "key": "ff80a13ae8aa",
+    "group": "Appearance",
+    "defaultValue": "Choose the future you imagine for yourself."
+  },
+  {
+    "key": "b47e0f0e244b",
+    "group": "Appearance",
+    "defaultValue": "Comfortable reading at night"
+  },
+  {
+    "key": "fd57766b5b98",
+    "group": "Appearance",
+    "defaultValue": "Dark reading mode"
+  },
+  {
+    "key": "2c447e8d0598",
+    "group": "Appearance",
+    "defaultValue": "Frames"
+  },
+  {
+    "key": "4690e8c37ec9",
+    "group": "Appearance",
+    "defaultValue": "Practice sounds"
+  },
+  {
+    "key": "b949521b0bb2",
+    "group": "Appearance",
+    "defaultValue": "Reading themes"
+  },
+  {
+    "key": "45ebd7ec5e17",
+    "group": "Appearance",
+    "defaultValue": "Sound for correct and incorrect answers"
+  },
+  {
+    "key": "37a105f5d365",
+    "group": "Appearance",
+    "defaultValue": "{0} avatar"
+  },
+  {
+    "key": "55f14c25191a",
+    "group": "Ask teacher",
+    "defaultValue": "Could not load replies. Come back online and reopen this page."
+  },
+  {
+    "key": "c910d474dcd7",
+    "group": "Ask teacher",
+    "defaultValue": "General"
+  },
+  {
+    "key": "7a20975e40ed",
+    "group": "Ask teacher",
+    "defaultValue": "My questions"
+  },
+  {
+    "key": "c20761351cf2",
+    "group": "Ask teacher",
+    "defaultValue": "Preview မှာ Teacher ကို မပို့နိုင်ပါ။ Student account နဲ့ Login ဝင်ပါ။"
+  },
+  {
+    "key": "ec075128ebd3",
+    "group": "Ask teacher",
+    "defaultValue": "Send question"
+  },
+  {
+    "key": "b8ed5279e897",
+    "group": "Ask teacher",
+    "defaultValue": "Sending…"
+  },
+  {
+    "key": "68971283841a",
+    "group": "Ask teacher",
+    "defaultValue": "Subject"
+  },
+  {
+    "key": "aaa1a84469e6",
+    "group": "Ask teacher",
+    "defaultValue": "Waiting for your teacher"
+  },
+  {
+    "key": "22ae3f97a92d",
+    "group": "Ask teacher",
+    "defaultValue": "Your question"
+  },
+  {
+    "key": "2cece5b34686",
+    "group": "Ask teacher",
+    "defaultValue": "ဆရာ့ဆီ မေးခွန်းပို့ဖို့ Student account နဲ့ ဝင်ပါ။"
+  },
+  {
+    "key": "e5a0562cbd87",
+    "group": "Assignments",
+    "defaultValue": " answered"
+  },
+  {
+    "key": "56975d5acccf",
+    "group": "Assignments",
+    "defaultValue": " assignments"
+  },
+  {
+    "key": "afa462515e16",
+    "group": "Assignments",
+    "defaultValue": " marks"
+  },
+  {
+    "key": "31845e5246c8",
+    "group": "Assignments",
+    "defaultValue": " questions · "
+  },
+  {
+    "key": "a52ace420f21",
+    "group": "Assignments",
+    "defaultValue": "All"
+  },
+  {
+    "key": "23971def3f4d",
+    "group": "Assignments",
+    "defaultValue": "All subjects"
+  },
+  {
+    "key": "2c7e21f63a47",
+    "group": "Assignments",
+    "defaultValue": "Assignments"
+  },
+  {
+    "key": "31fbef162594",
+    "group": "Assignments",
+    "defaultValue": "Continue"
+  },
+  {
+    "key": "11a6767d5674",
+    "group": "Assignments",
+    "defaultValue": "Done"
+  },
+  {
+    "key": "3f63770670e6",
+    "group": "Assignments",
+    "defaultValue": "HTML activity"
+  },
+  {
+    "key": "7e6fefff0f0a",
+    "group": "Assignments",
+    "defaultValue": "Hidden"
+  },
+  {
+    "key": "ac20a57bfde0",
+    "group": "Assignments",
+    "defaultValue": "Hide"
+  },
+  {
+    "key": "18fdd549b2ed",
+    "group": "Assignments",
+    "defaultValue": "New"
+  },
+  {
+    "key": "7ef353e382b2",
+    "group": "Assignments",
+    "defaultValue": "No assignments in this view"
+  },
+  {
+    "key": "c3925bf47f6d",
+    "group": "Assignments",
+    "defaultValue": "Open activity"
+  },
+  {
+    "key": "0e9161011702",
+    "group": "Assignments",
+    "defaultValue": "Refresh"
+  },
+  {
+    "key": "a76e13b98392",
+    "group": "Assignments",
+    "defaultValue": "Restore"
+  },
+  {
+    "key": "8664b95fcf5b",
+    "group": "Assignments",
+    "defaultValue": "Search practice"
+  },
+  {
+    "key": "42a957212d99",
+    "group": "Assignments",
+    "defaultValue": "Show visible"
+  },
+  {
+    "key": "4cbcbcb07054",
+    "group": "Assignments",
+    "defaultValue": "Start practice"
+  },
+  {
+    "key": "ecbc89cd37a0",
+    "group": "Assignments",
+    "defaultValue": "Started"
+  },
+  {
+    "key": "7bcfa9f12bac",
+    "group": "Assignments",
+    "defaultValue": "Title, subject, concept…"
+  },
+  {
+    "key": "e0bae4ccb866",
+    "group": "Assignments",
+    "defaultValue": "Try another filter or refresh assignments."
+  },
+  {
+    "key": "462444ae80b2",
+    "group": "Assignments",
+    "defaultValue": "View feedback"
+  },
+  {
+    "key": "4baab2fd670f",
+    "group": "Branding",
+    "defaultValue": "EduNova Student"
+  },
+  {
+    "key": "4ae5578d022f",
+    "group": "Branding",
+    "defaultValue": "EduNova Student Career Edition"
+  },
+  {
+    "key": "b9b3516c8762",
+    "group": "Branding",
+    "defaultValue": "JavaScript is required for EduNova."
+  },
+  {
+    "key": "1c20b2d00d12",
+    "group": "Branding",
+    "defaultValue": "STUDENT EDITION"
+  },
+  {
+    "key": "95b023258958",
+    "group": "Classroom",
+    "defaultValue": "Ask teacher"
+  },
+  {
+    "key": "601eb92982de",
+    "group": "Classroom",
+    "defaultValue": "Classroom notes"
+  },
+  {
+    "key": "2619af11ab8c",
+    "group": "Classroom",
+    "defaultValue": "Lesson note"
+  },
+  {
+    "key": "d38fae38cdbf",
+    "group": "Classroom",
+    "defaultValue": "Loading notes…"
+  },
+  {
+    "key": "7fdab5afe153",
+    "group": "Classroom",
+    "defaultValue": "Read lesson"
+  },
+  {
+    "key": "1c0def7be060",
+    "group": "Classroom",
+    "defaultValue": "Refreshing…"
+  },
+  {
+    "key": "57fd2d994146",
+    "group": "Classroom",
+    "defaultValue": "Teacher notes and interactive lessons"
+  },
+  {
+    "key": "80b5d75b6dda",
+    "group": "Classroom",
+    "defaultValue": "Your teacher hasn’t added any notes yet."
+  },
+  {
+    "key": "2f6c252d21b9",
+    "group": "Dialogs",
+    "defaultValue": "Answer 100 questions correctly to unlock this frame."
+  },
+  {
+    "key": "19766ed6ccb2",
+    "group": "Dialogs",
+    "defaultValue": "Cancel"
+  },
+  {
+    "key": "565339bc4d33",
+    "group": "Dialogs",
+    "defaultValue": "OK"
+  },
+  {
+    "key": "c1c084addfcc",
+    "group": "Dialogs",
+    "defaultValue": "Sign out?"
+  },
+  {
+    "key": "155f816c0407",
+    "group": "Dialogs",
+    "defaultValue": "Submit"
+  },
+  {
+    "key": "b0382089613c",
+    "group": "Dialogs",
+    "defaultValue": "Submit exercise?"
+  },
+  {
+    "key": "a20f21507b4a",
+    "group": "Dialogs",
+    "defaultValue": "Your saved practice stays on this device."
+  },
+  {
+    "key": "0eacdf5c38ed",
+    "group": "Dialogs",
+    "defaultValue": "{0} of {1} answered. You cannot change your answers after submission."
+  },
+  {
+    "key": "237e5d6a41af",
+    "group": "Feedback",
+    "defaultValue": "Answer review"
+  },
+  {
+    "key": "aca01a1a3a27",
+    "group": "Feedback",
+    "defaultValue": "Correct"
+  },
+  {
+    "key": "18f635d28bd4",
+    "group": "Feedback",
+    "defaultValue": "Correct answer ·"
+  },
+  {
+    "key": "1d4ffa2b3478",
+    "group": "Feedback",
+    "defaultValue": "Not answered"
+  },
+  {
+    "key": "a1286c3b41c1",
+    "group": "Feedback",
+    "defaultValue": "Result unavailable."
+  },
+  {
+    "key": "b6d7d34f682d",
+    "group": "Feedback",
+    "defaultValue": "Retry sync"
+  },
+  {
+    "key": "aff0766a5290",
+    "group": "Feedback",
+    "defaultValue": "Review"
+  },
+  {
+    "key": "e1fa7ea3716c",
+    "group": "Feedback",
+    "defaultValue": "Teacher feedback"
+  },
+  {
+    "key": "7bdfb7fb6f3a",
+    "group": "Feedback",
+    "defaultValue": "Teacher mark: {0}"
+  },
+  {
+    "key": "28449b0c9511",
+    "group": "Feedback",
+    "defaultValue": "Your answer ·"
+  },
+  {
+    "key": "6ea55197ebea",
+    "group": "Feedback",
+    "defaultValue": "correct ·"
+  },
+  {
+    "key": "203d3536bd62",
+    "group": "Feedback",
+    "defaultValue": "incorrect"
+  },
+  {
+    "key": "46eb8f45b716",
+    "group": "Feedback",
+    "defaultValue": "marks ·"
+  },
+  {
+    "key": "218d5186b8f2",
+    "group": "Home",
+    "defaultValue": "Browse by subject"
+  },
+  {
+    "key": "ae242bfeca1f",
+    "group": "Home",
+    "defaultValue": "Build your knowledge one lesson at a time."
+  },
+  {
+    "key": "22a970d2e5b1",
+    "group": "Home",
+    "defaultValue": "Completed"
+  },
+  {
+    "key": "277ddff6cc80",
+    "group": "Home",
+    "defaultValue": "Daily learning"
+  },
+  {
+    "key": "dafe7694460f",
+    "group": "Home",
+    "defaultValue": "Hello,"
+  },
+  {
+    "key": "95a83b14643f",
+    "group": "Home",
+    "defaultValue": "Hello, {0}"
+  },
+  {
+    "key": "81980e546106",
+    "group": "Home",
+    "defaultValue": "Notes and lessons"
+  },
+  {
+    "key": "b5016d032824",
+    "group": "Home",
+    "defaultValue": "Open practice"
+  },
+  {
+    "key": "7234213a42c2",
+    "group": "Home",
+    "defaultValue": "Open profile"
+  },
+  {
+    "key": "ff8122db55fb",
+    "group": "Home",
+    "defaultValue": "Practice library"
+  },
+  {
+    "key": "e604e5e10da7",
+    "group": "Home",
+    "defaultValue": "Progress journal"
+  },
+  {
+    "key": "4c79e852a7de",
+    "group": "Home",
+    "defaultValue": "Ready to learn something new?"
+  },
+  {
+    "key": "16bb3d688b13",
+    "group": "Home",
+    "defaultValue": "Refresh assignments"
+  },
+  {
+    "key": "1d0859515c3c",
+    "group": "Home",
+    "defaultValue": "Resume practice"
+  },
+  {
+    "key": "32a91388b2b4",
+    "group": "Home",
+    "defaultValue": "Review scores and explanations"
+  },
+  {
+    "key": "e79957110ead",
+    "group": "Home",
+    "defaultValue": "Sample lessons"
+  },
+  {
+    "key": "cf47aeafc283",
+    "group": "Home",
+    "defaultValue": "Study spaces"
+  },
+  {
+    "key": "8a046cc90ab0",
+    "group": "Home",
+    "defaultValue": "Syncing…"
+  },
+  {
+    "key": "0aaef431065a",
+    "group": "Home",
+    "defaultValue": "To practise"
+  },
+  {
+    "key": "8d816027f307",
+    "group": "Home",
+    "defaultValue": "Your learning today"
+  },
+  {
+    "key": "aee8736c2b78",
+    "group": "Lesson",
+    "defaultValue": "A+"
+  },
+  {
+    "key": "788176dd61de",
+    "group": "Lesson",
+    "defaultValue": "Ask about this lesson"
+  },
+  {
+    "key": "8de4e50caae4",
+    "group": "Lesson",
+    "defaultValue": "A−"
+  },
+  {
+    "key": "5b8f72b67c5d",
+    "group": "Lesson",
+    "defaultValue": "HTML activities are viewed here. Scores are recorded for native quizzes."
+  },
+  {
+    "key": "b5414df031da",
+    "group": "Lesson",
+    "defaultValue": "Lesson unavailable."
+  },
+  {
+    "key": "edaa4cc20fe3",
+    "group": "Lesson",
+    "defaultValue": "Text size ·"
+  },
+  {
+    "key": "6ee2cc105a67",
+    "group": "Lesson",
+    "defaultValue": "px"
+  },
+  {
+    "key": "d9c71040cd84",
+    "group": "Lesson",
+    "defaultValue": "ဒီသင်ခန်းစာမှာ စာသားမပါသေးပါ။"
+  },
+  {
+    "key": "6ccd5c785604",
+    "group": "Menu",
+    "defaultValue": "Close menu"
+  },
+  {
+    "key": "aaf44464689c",
+    "group": "Mistake notebook",
+    "defaultValue": "Learn from your previous answers"
+  },
+  {
+    "key": "08cff1a18e1c",
+    "group": "Mistake notebook",
+    "defaultValue": "No missed questions to review."
+  },
+  {
+    "key": "76900f1bfd16",
+    "group": "Navigation",
+    "defaultValue": "Back"
+  },
+  {
+    "key": "db1d2dd87b22",
+    "group": "Navigation",
+    "defaultValue": "EduNova"
+  },
+  {
+    "key": "eb355944b92d",
+    "group": "Navigation",
+    "defaultValue": "Main navigation"
+  },
+  {
+    "key": "99af6606ff9d",
+    "group": "Navigation",
+    "defaultValue": "Menu"
+  },
+  {
+    "key": "a23ad2ece97d",
+    "group": "Navigation",
+    "defaultValue": "Preview · sample lessons only"
+  },
+  {
+    "key": "38da1505ca83",
+    "group": "Navigation & messages",
+    "defaultValue": "Activity"
+  },
+  {
+    "key": "3907fa7f8072",
+    "group": "Navigation & messages",
+    "defaultValue": "Appearance"
+  },
+  {
+    "key": "1d3981ba1e18",
+    "group": "Navigation & messages",
+    "defaultValue": "Artist"
+  },
+  {
+    "key": "62b66bec7c19",
+    "group": "Navigation & messages",
+    "defaultValue": "Ask your teacher"
+  },
+  {
+    "key": "d6ad8b4211d8",
+    "group": "Navigation & messages",
+    "defaultValue": "Astronomer"
+  },
+  {
+    "key": "8c7253675670",
+    "group": "Navigation & messages",
+    "defaultValue": "Bookworm"
+  },
+  {
+    "key": "8919a27248eb",
+    "group": "Navigation & messages",
+    "defaultValue": "Botanist"
+  },
+  {
+    "key": "97f848470490",
+    "group": "Navigation & messages",
+    "defaultValue": "Chemist"
+  },
+  {
+    "key": "ae25d6481fc1",
+    "group": "Navigation & messages",
+    "defaultValue": "Classic"
+  },
+  {
+    "key": "5b547053395f",
+    "group": "Navigation & messages",
+    "defaultValue": "Classroom"
+  },
+  {
+    "key": "24669ff48290",
+    "group": "Navigation & messages",
+    "defaultValue": "Doctor"
+  },
+  {
+    "key": "d93352a70395",
+    "group": "Navigation & messages",
+    "defaultValue": "Engineer"
+  },
+  {
+    "key": "c39d646f1076",
+    "group": "Navigation & messages",
+    "defaultValue": "Explorer"
+  },
+  {
+    "key": "aac77df34720",
+    "group": "Navigation & messages",
+    "defaultValue": "Feedback"
+  },
+  {
+    "key": "1c9ef6154b99",
+    "group": "Navigation & messages",
+    "defaultValue": "Garden Sage"
+  },
+  {
+    "key": "ed45a390801a",
+    "group": "Navigation & messages",
+    "defaultValue": "Golden Scholar"
+  },
+  {
+    "key": "aba1eecaad22",
+    "group": "Navigation & messages",
+    "defaultValue": "Graduate"
+  },
+  {
+    "key": "382af9d17561",
+    "group": "Navigation & messages",
+    "defaultValue": "Heritage"
+  },
+  {
+    "key": "3a78695388b3",
+    "group": "Navigation & messages",
+    "defaultValue": "Home"
+  },
+  {
+    "key": "0a7c19cf8908",
+    "group": "Navigation & messages",
+    "defaultValue": "Laurel"
+  },
+  {
+    "key": "6e2b26d9de40",
+    "group": "Navigation & messages",
+    "defaultValue": "Lesson"
+  },
+  {
+    "key": "e067bc30342c",
+    "group": "Navigation & messages",
+    "defaultValue": "Mentor"
+  },
+  {
+    "key": "428bc75ca8b3",
+    "group": "Navigation & messages",
+    "defaultValue": "Mistake notebook"
+  },
+  {
+    "key": "f905f32884d9",
+    "group": "Navigation & messages",
+    "defaultValue": "Ocean Blue"
+  },
+  {
+    "key": "3f16b9bb1a70",
+    "group": "Navigation & messages",
+    "defaultValue": "Oxford Blue"
+  },
+  {
+    "key": "d820bea1734d",
+    "group": "Navigation & messages",
+    "defaultValue": "Peach Blossom"
+  },
+  {
+    "key": "b83a3f99e94c",
+    "group": "Navigation & messages",
+    "defaultValue": "Petal"
+  },
+  {
+    "key": "d3857b12b4ce",
+    "group": "Navigation & messages",
+    "defaultValue": "Practice"
+  },
+  {
+    "key": "d696a35bdd18",
+    "group": "Navigation & messages",
+    "defaultValue": "Profile"
+  },
+  {
+    "key": "4664827f8e89",
+    "group": "Navigation & messages",
+    "defaultValue": "Progress"
+  },
+  {
+    "key": "bea8fbbdb42a",
+    "group": "Navigation & messages",
+    "defaultValue": "Question sent"
+  },
+  {
+    "key": "d8554253f56d",
+    "group": "Navigation & messages",
+    "defaultValue": "Reader"
+  },
+  {
+    "key": "219c4a6c86a7",
+    "group": "Navigation & messages",
+    "defaultValue": "Results"
+  },
+  {
+    "key": "1c0f1132e8fb",
+    "group": "Navigation & messages",
+    "defaultValue": "Royal"
+  },
+  {
+    "key": "3cfd550cebe7",
+    "group": "Navigation & messages",
+    "defaultValue": "Scholar"
+  },
+  {
+    "key": "1532e258d9c4",
+    "group": "Navigation & messages",
+    "defaultValue": "Scientist"
+  },
+  {
+    "key": "ab827e3fe17d",
+    "group": "Navigation & messages",
+    "defaultValue": "Something went wrong"
+  },
+  {
+    "key": "01acc2c38fe0",
+    "group": "Navigation & messages",
+    "defaultValue": "Starlight"
+  },
+  {
+    "key": "2a164d541578",
+    "group": "Navigation & messages",
+    "defaultValue": "Student"
+  },
+  {
+    "key": "1a7529ab14fd",
+    "group": "Navigation & messages",
+    "defaultValue": "Subjects"
+  },
+  {
+    "key": "5eeee52ec1e5",
+    "group": "Navigation & messages",
+    "defaultValue": "Teacher"
+  },
+  {
+    "key": "3970f94db619",
+    "group": "Navigation & messages",
+    "defaultValue": "Warm Honey"
+  },
+  {
+    "key": "0e3c5fe00f66",
+    "group": "Navigation & messages",
+    "defaultValue": "Writer"
+  },
+  {
+    "key": "352168653bb9",
+    "group": "Navigation & messages",
+    "defaultValue": "ဆရာ့ကို မေးချင်တဲ့ အကြောင်းအရာကို ရေးပေးပါ။"
+  },
+  {
+    "key": "0433d184a399",
+    "group": "Navigation & messages",
+    "defaultValue": "ဆရာ့ဆီ မေးခွန်း ပို့ပြီးပါပြီ။"
+  },
+  {
+    "key": "07f18fc937af",
+    "group": "Navigation & messages",
+    "defaultValue": "မေးခွန်း ပို့လို့မရပါ"
+  },
+  {
+    "key": "68e5a8e437dc",
+    "group": "Navigation & messages",
+    "defaultValue": "မေးခွန်း ရေးပါ"
+  },
+  {
+    "key": "1ecc668af288",
+    "group": "Network",
+    "defaultValue": "Database rules denied access"
+  },
+  {
+    "key": "2a33d984de88",
+    "group": "Network",
+    "defaultValue": "Network error"
+  },
+  {
+    "key": "74cf2bc63fe1",
+    "group": "Profile",
+    "defaultValue": "Achievements"
+  },
+  {
+    "key": "a3ac82516aaf",
+    "group": "Profile",
+    "defaultValue": "Edit appearance"
+  },
+  {
+    "key": "324b134f57c7",
+    "group": "Profile",
+    "defaultValue": "Preview"
+  },
+  {
+    "key": "873986b4a09e",
+    "group": "Profile",
+    "defaultValue": "Review and improve"
+  },
+  {
+    "key": "48f0d3d397d4",
+    "group": "Profile",
+    "defaultValue": "Sign out"
+  },
+  {
+    "key": "f34282b800d6",
+    "group": "Profile",
+    "defaultValue": "Your completed work"
+  },
+  {
+    "key": "2cb9f16087c1",
+    "group": "Progress journal",
+    "defaultValue": " · Saved locally"
+  },
+  {
+    "key": "a2320575db5a",
+    "group": "Progress journal",
+    "defaultValue": "Completed exercises ·"
+  },
+  {
+    "key": "c554fa7d7b74",
+    "group": "Progress journal",
+    "defaultValue": "Finished exercises will appear here."
+  },
+  {
+    "key": "1ac3d44b3c6e",
+    "group": "Progress journal",
+    "defaultValue": "Recent results"
+  },
+  {
+    "key": "d513759fc69c",
+    "group": "Progress journal",
+    "defaultValue": "Review your scores and explanations"
+  },
+  {
+    "key": "433a720b7e1d",
+    "group": "Progress journal",
+    "defaultValue": "Your progress"
+  },
+  {
+    "key": "956ca3c7cfe9",
+    "group": "Progress journal",
+    "defaultValue": "correct answers"
+  },
+  {
+    "key": "59b5b25c3f12",
+    "group": "Quiz",
+    "defaultValue": "Check answer"
+  },
+  {
+    "key": "e0fd936b1d0f",
+    "group": "Quiz",
+    "defaultValue": "Choose frame"
+  },
+  {
+    "key": "fb019d338b43",
+    "group": "Quiz",
+    "defaultValue": "Correct answer"
+  },
+  {
+    "key": "40c25dc80741",
+    "group": "Quiz",
+    "defaultValue": "Device storage is full. Answer was not saved."
+  },
+  {
+    "key": "b766f05391b0",
+    "group": "Quiz",
+    "defaultValue": "Device storage is full. Submission was not saved."
+  },
+  {
+    "key": "7652782ebe75",
+    "group": "Quiz",
+    "defaultValue": "FILL BLANKS"
+  },
+  {
+    "key": "60a33e6cf515",
+    "group": "Quiz",
+    "defaultValue": "False"
+  },
+  {
+    "key": "a6c7a84baa67",
+    "group": "Quiz",
+    "defaultValue": "Finish"
+  },
+  {
+    "key": "75ca0bb5a70b",
+    "group": "Quiz",
+    "defaultValue": "Golden Scholar unlocked!"
+  },
+  {
+    "key": "73b6e48a1b55",
+    "group": "Quiz",
+    "defaultValue": "Later"
+  },
+  {
+    "key": "14683cfd80f2",
+    "group": "Quiz",
+    "defaultValue": "Let’s review"
+  },
+  {
+    "key": "f2c539c844e0",
+    "group": "Quiz",
+    "defaultValue": "MCQ"
+  },
+  {
+    "key": "1ff57a29d7c9",
+    "group": "Quiz",
+    "defaultValue": "Next"
+  },
+  {
+    "key": "d889d64ebfb2",
+    "group": "Quiz",
+    "defaultValue": "No questions available."
+  },
+  {
+    "key": "a57b08a480b8",
+    "group": "Quiz",
+    "defaultValue": "Previous"
+  },
+  {
+    "key": "289aff12b042",
+    "group": "Quiz",
+    "defaultValue": "Question"
+  },
+  {
+    "key": "e0f3a4e3db30",
+    "group": "Quiz",
+    "defaultValue": "Saved on this phone · waiting to sync"
+  },
+  {
+    "key": "57eda84fc97d",
+    "group": "Quiz",
+    "defaultValue": "Submit exercise"
+  },
+  {
+    "key": "c1ca984b5099",
+    "group": "Quiz",
+    "defaultValue": "TRUE FALSE"
+  },
+  {
+    "key": "3cbc87c7681f",
+    "group": "Quiz",
+    "defaultValue": "True"
+  },
+  {
+    "key": "ec1afb82b04d",
+    "group": "Quiz",
+    "defaultValue": "You answered 100 questions correctly. Your Golden Scholar frame is now available."
+  },
+  {
+    "key": "d0e869b777a6",
+    "group": "Quiz",
+    "defaultValue": "Your answer"
+  },
+  {
+    "key": "68c780cd132a",
+    "group": "Quiz",
+    "defaultValue": "answered"
+  },
+  {
+    "key": "28391d3bc64e",
+    "group": "Quiz",
+    "defaultValue": "of"
+  },
+  {
+    "key": "c54a061dfcc1",
+    "group": "Quiz",
+    "defaultValue": "points"
+  },
+  {
+    "key": "b717883aa388",
+    "group": "Quiz",
+    "defaultValue": "{0} points"
+  },
+  {
+    "key": "a3d599366ff3",
+    "group": "Sample lessons",
+    "defaultValue": "A metal transfers electrons to a non-metal."
+  },
+  {
+    "key": "2247be33a7dd",
+    "group": "Sample lessons",
+    "defaultValue": "A plant cell becomes turgid when water enters by osmosis."
+  },
+  {
+    "key": "f9c6e6a60304",
+    "group": "Sample lessons",
+    "defaultValue": "Anions gain electrons and are negatively charged."
+  },
+  {
+    "key": "47effdddf581",
+    "group": "Sample lessons",
+    "defaultValue": "Anions have a negative charge."
+  },
+  {
+    "key": "aea1058d135f",
+    "group": "Sample lessons",
+    "defaultValue": "Biology"
+  },
+  {
+    "key": "dfdb65bb4d96",
+    "group": "Sample lessons",
+    "defaultValue": "Chapter 3"
+  },
+  {
+    "key": "24eac3fefb58",
+    "group": "Sample lessons",
+    "defaultValue": "Chapter 4"
+  },
+  {
+    "key": "ab2cc833ed40",
+    "group": "Sample lessons",
+    "defaultValue": "Chemistry"
+  },
+  {
+    "key": "6951e0d0adfc",
+    "group": "Sample lessons",
+    "defaultValue": "Choose the grammatically correct sentence."
+  },
+  {
+    "key": "c30c292ffe35",
+    "group": "Sample lessons",
+    "defaultValue": "Cl and Cl"
+  },
+  {
+    "key": "6feb6c421853",
+    "group": "Sample lessons",
+    "defaultValue": "During osmosis, water moves across a partially permeable membrane from higher to lower water potential."
+  },
+  {
+    "key": "5517c6c14241",
+    "group": "Sample lessons",
+    "defaultValue": "Electron transfer"
+  },
+  {
+    "key": "ba118bf7fc9c",
+    "group": "Sample lessons",
+    "defaultValue": "English"
+  },
+  {
+    "key": "f4fd33ce16d1",
+    "group": "Sample lessons",
+    "defaultValue": "Essential Academic Grammar"
+  },
+  {
+    "key": "e0fc8f6f22bc",
+    "group": "Sample lessons",
+    "defaultValue": "Future Scholar"
+  },
+  {
+    "key": "40b27792072a",
+    "group": "Sample lessons",
+    "defaultValue": "Glucose only"
+  },
+  {
+    "key": "0d7ae3c14838",
+    "group": "Sample lessons",
+    "defaultValue": "Grade 10"
+  },
+  {
+    "key": "e7a5180715ec",
+    "group": "Sample lessons",
+    "defaultValue": "H and H"
+  },
+  {
+    "key": "605026cbb62b",
+    "group": "Sample lessons",
+    "defaultValue": "Higher water potential"
+  },
+  {
+    "key": "66771ddf67c7",
+    "group": "Sample lessons",
+    "defaultValue": "Inside an Ionic Bond"
+  },
+  {
+    "key": "4c307f9d89bd",
+    "group": "Sample lessons",
+    "defaultValue": "Lower potential"
+  },
+  {
+    "key": "2946fb48635c",
+    "group": "Sample lessons",
+    "defaultValue": "Mineral salts"
+  },
+  {
+    "key": "9c732b1b0812",
+    "group": "Sample lessons",
+    "defaultValue": "Movement of water"
+  },
+  {
+    "key": "bc2815cc8b4b",
+    "group": "Sample lessons",
+    "defaultValue": "Na and Cl"
+  },
+  {
+    "key": "ae2861e1af56",
+    "group": "Sample lessons",
+    "defaultValue": "O and O"
+  },
+  {
+    "key": "4de5b0b530a6",
+    "group": "Sample lessons",
+    "defaultValue": "Osmosis & Turgor"
+  },
+  {
+    "key": "462870d0a7ae",
+    "group": "Sample lessons",
+    "defaultValue": "Osmosis in motion"
+  },
+  {
+    "key": "1abfae78909f",
+    "group": "Sample lessons",
+    "defaultValue": "Osmosis is the net movement of water molecules from higher to lower water potential."
+  },
+  {
+    "key": "943077f0507d",
+    "group": "Sample lessons",
+    "defaultValue": "Oxygen"
+  },
+  {
+    "key": "bb7ab694c152",
+    "group": "Sample lessons",
+    "defaultValue": "Sentence structure"
+  },
+  {
+    "key": "b92332a1e798",
+    "group": "Sample lessons",
+    "defaultValue": "She does study every day."
+  },
+  {
+    "key": "c2cbf7968fe9",
+    "group": "Sample lessons",
+    "defaultValue": "She don't study."
+  },
+  {
+    "key": "ff1df7459288",
+    "group": "Sample lessons",
+    "defaultValue": "She study everyday."
+  },
+  {
+    "key": "ee0b3f43eb3f",
+    "group": "Sample lessons",
+    "defaultValue": "She studying every day."
+  },
+  {
+    "key": "9cddc7cc0cd8",
+    "group": "Sample lessons",
+    "defaultValue": "The pressure of cell contents against the cell wall is called ____ pressure."
+  },
+  {
+    "key": "1d4475e2643c",
+    "group": "Sample lessons",
+    "defaultValue": "Turgor pressure keeps a plant cell firm."
+  },
+  {
+    "key": "13187fcba2c9",
+    "group": "Sample lessons",
+    "defaultValue": "Unit 2"
+  },
+  {
+    "key": "eb3e2da1bef9",
+    "group": "Sample lessons",
+    "defaultValue": "Use the auxiliary 'does' with a third-person singular subject."
+  },
+  {
+    "key": "3db8cf0e91e6",
+    "group": "Sample lessons",
+    "defaultValue": "Water can pass through the membrane, even when some dissolved particles cannot."
+  },
+  {
+    "key": "0561566f7f00",
+    "group": "Sample lessons",
+    "defaultValue": "Water entry creates turgor pressure against the cell wall."
+  },
+  {
+    "key": "209522cbd772",
+    "group": "Sample lessons",
+    "defaultValue": "Water molecules"
+  },
+  {
+    "key": "aeae277f2a51",
+    "group": "Sample lessons",
+    "defaultValue": "Water molecules crossing a membrane"
+  },
+  {
+    "key": "4dbb420783f3",
+    "group": "Sample lessons",
+    "defaultValue": "Water movement"
+  },
+  {
+    "key": "d66116feebd0",
+    "group": "Sample lessons",
+    "defaultValue": "What moves across a partially permeable membrane during osmosis?"
+  },
+  {
+    "key": "619099c635c2",
+    "group": "Sample lessons",
+    "defaultValue": "Where does the water go?"
+  },
+  {
+    "key": "083629e45300",
+    "group": "Sample lessons",
+    "defaultValue": "Which pair most likely forms an ionic bond?"
+  },
+  {
+    "key": "c4dc6d95190f",
+    "group": "Sample lessons",
+    "defaultValue": "Why does this happen?"
+  },
+  {
+    "key": "9eccbf49159b",
+    "group": "Sign-in",
+    "defaultValue": "Learn today. Lead tomorrow."
+  },
+  {
+    "key": "e7cf3ef4f17c",
+    "group": "Sign-in",
+    "defaultValue": "Password"
+  },
+  {
+    "key": "44537c0b3b1d",
+    "group": "Sign-in",
+    "defaultValue": "Password ထည့်ပါ။"
+  },
+  {
+    "key": "33573d6b0380",
+    "group": "Sign-in",
+    "defaultValue": "Preview with sample lessons"
+  },
+  {
+    "key": "bfd402b2f6f3",
+    "group": "Sign-in",
+    "defaultValue": "Sign in"
+  },
+  {
+    "key": "8b9d3de8ae00",
+    "group": "Sign-in",
+    "defaultValue": "Signing in…"
+  },
+  {
+    "key": "97cced38248a",
+    "group": "Sign-in",
+    "defaultValue": "Student ID"
+  },
+  {
+    "key": "f90ade93a53f",
+    "group": "Sign-in",
+    "defaultValue": "Student ID ထည့်ပါ။"
+  },
+  {
+    "key": "49ae4dcc628a",
+    "group": "Sign-in",
+    "defaultValue": "Student edition"
+  },
+  {
+    "key": "bb626945bbd8",
+    "group": "Sign-in",
+    "defaultValue": "Student အကောင့်ကို စစ်ဆေးနေပါတယ်…"
+  },
+  {
+    "key": "6621249514b7",
+    "group": "Sign-in",
+    "defaultValue": "Welcome back"
+  },
+  {
+    "key": "0450d96312a3",
+    "group": "Sign-in",
+    "defaultValue": "ကိုယ့်အကောင့်နဲ့ ဝင်ပါ။"
+  },
+  {
+    "key": "8717f693e00f",
+    "group": "Sign-in",
+    "defaultValue": "ဒီ browser မှာ အကောင့်ကို သိမ်းလို့မရပါ။ Browser storage ကို စစ်ပြီး ထပ်ဝင်ပါ။"
+  },
+  {
+    "key": "216a3ea86762",
+    "group": "Sign-in",
+    "defaultValue": "ဒီအကောင့်ကို ပိတ်ထားပါတယ်။"
+  },
+  {
+    "key": "ba33afb426af",
+    "group": "Sign-in",
+    "defaultValue": "ဝင်လို့မရပါ။ ခဏနေရင် ထပ်စမ်းပါ။"
+  },
+  {
+    "key": "a4e95fc8e896",
+    "group": "Sign-in",
+    "defaultValue": "အကောင့်ကို Admin က ပြောင်းလဲထားပါတယ်။"
+  },
+  {
+    "key": "ecb6ae238bf2",
+    "group": "Sign-in",
+    "defaultValue": "အကောင့်စစ်ဆေးတာ ကြာနေပါတယ်။ Internet connection စစ်ပြီး ထပ်နှိပ်ပါ။"
+  },
+  {
+    "key": "048e7c91fc51",
+    "group": "Sign-in",
+    "defaultValue": "အကောင့်စစ်ဆေးလို့ မရသေးပါ။ Internet connection စစ်ပြီး ထပ်နှိပ်ပါ။"
+  },
+  {
+    "key": "39b3ccb09039",
+    "group": "Sign-in",
+    "defaultValue": "အကောင့်မရှိတော့ပါ။"
+  },
+  {
+    "key": "b441b47a8ad3",
+    "group": "Student site",
+    "defaultValue": "အကောင့် မရရှိနိုင်ပါ"
+  },
+  {
+    "key": "cab3ce69914a",
+    "group": "Subjects",
+    "defaultValue": "Choose a subject to practise"
+  },
+  {
+    "key": "57fc31d2c1f0",
+    "group": "Subjects",
+    "defaultValue": "No subjects assigned yet."
+  },
+  {
+    "key": "4ddb3e96801a",
+    "group": "Subjects",
+    "defaultValue": "completed"
+  },
+  {
+    "key": "847781c33136",
+    "group": "Sync & offline",
+    "defaultValue": "Existing submission could not be confirmed."
+  },
+  {
+    "key": "72a4acb3ad73",
+    "group": "Sync & offline",
+    "defaultValue": "Offline · showing saved notes"
+  },
+  {
+    "key": "c0f5e711b336",
+    "group": "Sync & offline",
+    "defaultValue": "Offline · showing saved practice"
+  },
+  {
+    "key": "dea7b04b107c",
+    "group": "Sync & offline",
+    "defaultValue": "Result synced"
+  },
+  {
+    "key": "fe0f6d8db1ef",
+    "group": "Sync & offline",
+    "defaultValue": "Still waiting to sync"
+  },
+  {
+    "key": "306b31465f64",
+    "group": "Sync & offline",
+    "defaultValue": "Submission identity mismatch"
+  }
+]

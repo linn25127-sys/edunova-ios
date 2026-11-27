@@ -1,0 +1,9 @@
+EduNova v24 iOS PWA — Linux verification
+PASS: All three JavaScript files parsed with node --check.
+PASS: manifest JSON parsed; start_url and scope are relative; icon paths exist.
+PASS: all 19 requested original assets match the Kotlin v24 source byte-for-byte.
+PASS: PNG app icon dimensions 180x180, 192x192 and 512x512.
+PASS: every service worker precache path exists.
+PASS: mocked RTDB repository tests: login, wrong password, inactive and changed token checks, grade/student assignment filtering, MCQ/TF/fill grading, offline submission retry, conditional write-once conflict handling, note cache, teacher question and preview.
+BLOCKED: Chromium local browser runtime test: net::ERR_BLOCKED_BY_ADMINISTRATOR at localhost. No browser UI/offline runtime pass claimed.
+NOT TESTED: live Firebase login, CORS/RTDB rules, real iPhone Safari, sound unlock, installation and rendering.

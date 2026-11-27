@@ -124,7 +124,7 @@ function setLoginBusy(busy) {
 
 function loginErrorMessage(error) {
   if (error.name === 'AbortError') return WebCopy.text("ecb6ae238bf2","အကောင့်စစ်ဆေးတာ ကြာနေပါတယ်။ Internet connection စစ်ပြီး ထပ်နှိပ်ပါ။");
-  if ([401, 403].includes(error.status)) return 'Student အကောင့်ကို စစ်ဆေးဖို့ Firebase က ခွင့်မပြုပါ။ ဆရာ့ကို အကြောင်းကြားပါ။';
+  if ([401, 403].includes(error.status)) return WebCopy.text("d7bf6c6ccabf","Student အကောင့်ကို စစ်ဆေးဖို့ Firebase က ခွင့်မပြုပါ။ ဆရာ့ကို အကြောင်းကြားပါ။");
   if (error instanceof TypeError || error.status) return WebCopy.text("048e7c91fc51","အကောင့်စစ်ဆေးလို့ မရသေးပါ။ Internet connection စစ်ပြီး ထပ်နှိပ်ပါ။");
   if (['SecurityError', 'QuotaExceededError'].includes(error.name)) return WebCopy.text("8717f693e00f","ဒီ browser မှာ အကောင့်ကို သိမ်းလို့မရပါ။ Browser storage ကို စစ်ပြီး ထပ်ဝင်ပါ။");
   return error.message || WebCopy.text("ba33afb426af","ဝင်လို့မရပါ။ ခဏနေရင် ထပ်စမ်းပါ။");

@@ -840,6 +840,16 @@
     "defaultValue": "Database rules denied access"
   },
   {
+    "key": "bbe18d4bc764",
+    "group": "Network",
+    "defaultValue": "Firebase HTTP "
+  },
+  {
+    "key": "d023599e7280",
+    "group": "Network",
+    "defaultValue": "Invalid database path"
+  },
+  {
     "key": "2a33d984de88",
     "group": "Network",
     "defaultValue": "Network error"
@@ -1275,6 +1285,11 @@
     "defaultValue": "Why does this happen?"
   },
   {
+    "key": "75532ef6530b",
+    "group": "Sign-in",
+    "defaultValue": "Grade မသတ်မှတ်ထားပါ။"
+  },
+  {
     "key": "9eccbf49159b",
     "group": "Sign-in",
     "defaultValue": "Learn today. Lead tomorrow."
@@ -1288,6 +1303,11 @@
     "key": "44537c0b3b1d",
     "group": "Sign-in",
     "defaultValue": "Password ထည့်ပါ။"
+  },
+  {
+    "key": "093ef6c9d35e",
+    "group": "Sign-in",
+    "defaultValue": "Password မမှန်ပါ။"
   },
   {
     "key": "33573d6b0380",
@@ -1310,6 +1330,11 @@
     "defaultValue": "Student ID"
   },
   {
+    "key": "aa87c71a0240",
+    "group": "Sign-in",
+    "defaultValue": "Student ID ကို ပြန်စစ်ပါ။"
+  },
+  {
     "key": "f90ade93a53f",
     "group": "Sign-in",
     "defaultValue": "Student ID ထည့်ပါ။"
@@ -1320,9 +1345,19 @@
     "defaultValue": "Student edition"
   },
   {
+    "key": "b4e230e33aa2",
+    "group": "Sign-in",
+    "defaultValue": "Student အကောင့် မတွေ့ပါ။"
+  },
+  {
     "key": "bb626945bbd8",
     "group": "Sign-in",
     "defaultValue": "Student အကောင့်ကို စစ်ဆေးနေပါတယ်…"
+  },
+  {
+    "key": "d7bf6c6ccabf",
+    "group": "Sign-in",
+    "defaultValue": "Student အကောင့်ကို စစ်ဆေးဖို့ Firebase က ခွင့်မပြုပါ။ ဆရာ့ကို အကြောင်းကြားပါ။"
   },
   {
     "key": "6621249514b7",

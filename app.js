@@ -26,7 +26,8 @@ function go(p,historyPush=true){if(!s&&p!=='login')p='login';page=p;$('drawer').
 function back(){if(!$('dialog').hidden){closeDialog();return}if(!$('drawer').hidden){$('drawer').hidden=true;return}go(({quiz:'practice',html:'practice',reader:'classroom',ask:askBack,result:resultBack,mistakes:'results',appearance:'profile'})[page]||'home',false)}
 window.addEventListener('popstate',back);
 function render(){applyTheme();const main=$('main');if(!s||page==='login'){$('header').hidden=true;$('nav').hidden=true;main.innerHTML=loginPage();return}$('header').hidden=false;$('nav').hidden=['quiz','reader','html','ask','result','appearance','mistakes','results'].includes(page);$('header').innerHTML=`<button class="iconbtn" data-action="${['home','subjects','practice','classroom','profile'].includes(page)?'drawer':'back'}" aria-label="${['home','subjects','practice','classroom','profile'].includes(page)?'Menu':'Back'}">${icon(['home','subjects','practice','classroom','profile'].includes(page)?'menu':'back')}</button><strong>${esc(titles[page]||'EduNova')}</strong><img src="./icon-192.png" alt="EduNova">`;$('nav').innerHTML=navs.map(([p,t,i])=>`<button class="${p===page?'active':''}" data-action="nav:${p}" ${p===page?'aria-current="page"':''}><span class="navicon">${icon(i)}</span>${t}</button>`).join('');const views={home,subjects,practice,quiz,classroom,reader:()=>reader(false),html:()=>reader(true),ask,results:resultsPage,result:resultPage,mistakes,profile,appearance};main.innerHTML=(s.preview&&['home','classroom','practice'].includes(page)?'<div class="notice">Preview · sample lessons only</div>':'')+(announcement&&['home','practice','classroom'].includes(page)?`<div class="notice">${esc(announcement)}</div>`:'')+(views[page]||home)();if(page==='reader'||page==='html')mountReader()}
-function loginPage(){return `<section class="login"><div class="row"><img src="./icon-192.png" width="46" height="46" alt=""><h2>EduNova</h2></div><div class="hero"><div class="content"><span class="eyebrow">Student edition</span><h1>Welcome back</h1><p>ကိုယ့်အကောင့်နဲ့ ဝင်ပါ။</p></div></div><form id="loginForm" class="panel"><label class="field">Student ID<input name="id" autocomplete="username" autocapitalize="none" spellcheck="false" required></label><label class="field">Password<input name="password" type="password" autocomplete="current-password" required></label><button class="btn full" ${loginBusy?'disabled':''}>${loginBusy?'Signing in…':'Sign in'}</button></form>${btn('Preview with sample lessons','preview','secondary full','book',loginBusy)}<small>Learn today. Lead tomorrow.</small></section>`}
+const loginPendingMessage = 'Student အကောင့်ကို စစ်ဆေးနေပါတယ်…';
+function loginPage(){return `<section class="login"><div class="row"><img src="./icon-192.png" width="46" height="46" alt=""><h2>EduNova</h2></div><div class="hero"><div class="content"><span class="eyebrow">Student edition</span><h1>Welcome back</h1><p>ကိုယ့်အကောင့်နဲ့ ဝင်ပါ။</p></div></div><form id="loginForm" class="panel" novalidate><label class="field">Student ID<input name="id" autocomplete="username" autocapitalize="none" spellcheck="false" required></label><label class="field">Password<input name="password" type="password" autocomplete="current-password" required></label><button type="submit" class="btn full" ${loginBusy?'disabled':''}>${loginBusy?'Signing in…':'Sign in'}</button><small id="loginStatus" class="notice" role="status" ${loginBusy?'':'hidden'}>${loginBusy?loginPendingMessage:''}</small></form>${btn('Preview with sample lessons','preview','secondary full','book',loginBusy)}<small>Learn today. Lead tomorrow.</small></section>`}
 function home(){const completed=exercises.filter(result).length,available=exercises.filter(e=>!hidden(e)&&!result(e)).length,next=exercises.find(e=>!hidden(e)&&status(e)==='Started')||exercises.find(e=>!hidden(e)&&!result(e));return `<div class="row"><div class="grow"><span class="eyebrow">${esc(s.preview?'Sample lessons':s.grade)}</span><h1>Hello, ${esc(s.name)}</h1><p>Ready to learn something new?</p></div><button style="background:none;padding:0" data-action="nav:profile" aria-label="Open profile">${avatar()}</button></div><section class="hero"><div class="content"><span class="eyebrow">${esc(next?.subject||'Daily learning')}</span><h1>${esc(next?.title||'Practice library')}</h1><p>${esc(next?.concept||'Build your knowledge one lesson at a time.')}</p>${btn(next&&status(next)==='Started'?'Resume practice':'Open practice',next?'exercise:'+next.id:'nav:practice','gold','next')}</div></section><h2>Your learning today</h2><div class="grid2"><button class="panel link" data-action="nav:results"><span class="tile warm">${icon('check')}</span><strong class="metric">${completed}</strong><small>Completed</small></button><button class="panel link" data-action="nav:practice"><span class="tile">${icon('pen')}</span><strong class="metric">${available}</strong><small>To practise</small></button></div><h2>Study spaces</h2><div class="grid2">${link('Subjects','Browse by subject','nav:subjects','grid')}${link('Classroom','Notes and lessons','nav:classroom','book',true)}</div>${link('Progress journal','Review scores and explanations','nav:results','chart')}${s.preview?'':btn(busy?'Syncing…':'Refresh assignments','refresh','secondary full','refresh',busy)}`}
 function subjects(){const list=[...new Set([...s.subjects,...exercises.map(e=>e.subject)])].filter(Boolean).sort();return heading('Subjects','Choose a subject to practise')+(list.length?list.map(t=>{const es=exercises.filter(e=>e.subject===t),n=es.filter(result).length;return `<button class="panel link" data-action="subject:${esc(t)}"><div class="row"><span class="tile">${icon('book')}</span><h2 class="grow">${esc(t)}</h2>${icon('next')}</div><small>${n} / ${es.length} completed</small>${progress(n,es.length)}</button>`}).join(''):'<div class="panel">No subjects assigned yet.</div>')}
 function filtered(){const q=search.trim().toLowerCase();return exercises.filter(e=>(showHidden?hidden(e):!hidden(e))&&(!subject||e.subject===subject)&&(filter==='All'||status(e)===filter)&&(!q||[e.title,e.subject,e.chapter,e.concept].join(' ').toLowerCase().includes(q)))}
@@ -58,9 +59,80 @@ async function refreshNotes(){if(!s||noteBusy)return;const seq=sequence,account=
 async function retryResult(){const r=Repo.result(s,resultId),seq=sequence;if(!r)return;try{await Repo.submit(s,r);if(seq===sequence){toast('Result synced');render()}}catch(e){if(seq===sequence){if(e.revoked)logout(e.message);else toast(e.message||'Still waiting to sync')}}}
 function action(value){const colon=value.indexOf(':'),a=colon<0?value:value.slice(0,colon),v=colon<0?'':value.slice(colon+1);switch(a){case'nav':closeDialog();if(v==='practice'&&page!=='subjects'){subject='';filter='All';search='';showHidden=false}go(v);break;case'back':back();break;case'drawer':drawer();break;case'closeDrawer':$('drawer').hidden=true;break;case'closeDialog':closeDialog();break;case'preview':if(loginBusy)return;restore(Repo.preview);go('home');break;case'confirmLogout':$('drawer').hidden=true;dialog('Sign out?','Your saved practice stays on this device.',[['Cancel','closeDialog'],['Sign out','logout']]);break;case'logout':logout();break;case'refresh':refresh();break;case'refreshNotes':refreshNotes();break;case'subject':subject=v;filter='All';search='';showHidden=false;go('practice');break;case'clearSubject':subject='';render();break;case'filter':filter=v;render();break;case'toggleHidden':showHidden=!showHidden;filter='All';render();break;case'exercise':begin(v);break;case'hide':{const e=exercises.find(x=>x.id===v);if(e&&result(e)){Repo.put(['hide',s.id,e.id],!hidden(e));render()}break}case'jump':qIndex=clamp(v,0,selected.questions.length-1);render();break;case'previous':qIndex=Math.max(0,qIndex-1);render();break;case'next':qIndex=Math.min(selected.questions.length-1,qIndex+1);render();break;case'answer':choose(v);break;case'confirmSubmit':dialog('Submit exercise?',`${Object.keys(answers).length} of ${selected.questions.length} answered. You cannot change your answers after submission.`,[['Cancel','closeDialog'],['Submit','submitQuiz']]);break;case'submitQuiz':submitQuiz();break;case'result':openResult(v);break;case'retry':retryResult();break;case'note':note=notes.find(n=>n.key===v);zoom=16;go('reader');break;case'askClass':note=null;askBack='classroom';go('ask');break;case'askNote':askBack='reader';go('ask');break;case'zoomIn':zoom=Math.min(28,zoom+2);render();break;case'zoomOut':zoom=Math.max(12,zoom-2);render();break;case'avatar':setPref('avatar',clamp(v,0,15));render();break;case'frame':if(+v===6&&achievement()<100){dialog('Golden Scholar','Answer 100 questions correctly to unlock this frame.');break}setPref('frame',clamp(v,0,6));render();break;case'theme':setPref('theme',clamp(v,0,4));render();break}}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(b&&!b.disabled){try{action(b.dataset.action)}catch(err){toast(err.message||'Something went wrong')}}else if(e.target===$('drawer'))$('drawer').hidden=true;else if(e.target===$('dialog'))closeDialog()});
-document.addEventListener('input',e=>{if(e.target.id==='search'){search=e.target.value;$('practiceList').innerHTML=practiceList()}});
+document.addEventListener('input', e => {
+  if (e.target.id === 'search') {
+    search = e.target.value;
+    $('practiceList').innerHTML = practiceList();
+  } else if (!loginBusy && e.target.form?.matches('#loginForm')) {
+    e.target.removeAttribute('aria-invalid');
+    setLoginStatus('');
+  }
+});
 document.addEventListener('change',e=>{const k=e.target.dataset.setting;if(!k)return;if(k==='dark')Repo.put(['darkMode'],e.target.checked);else setPref(k,k==='answer-sounds'?(e.target.checked?1:0):e.target.checked);applyTheme()});
-document.addEventListener('submit',async e=>{e.preventDefault();const f=e.target,d=new FormData(f);if(f.id==='loginForm'){if(loginBusy)return;loginBusy=true;const b=f.querySelector('button');b.disabled=true;b.textContent='Signing in…';try{const account=await Repo.login(String(d.get('id')).trim(),String(d.get('password')));Repo.put(['session'],account);restore(account);go('home');refresh()}catch(err){dialog('ဝင်လို့မရပါ',err.message||'Internet connection ကို ပြန်စစ်ပါ။')}finally{loginBusy=false;if(page==='login'){b.disabled=false;b.textContent='Sign in'}}}else if(f.id==='blankForm')choose(d.get('answer'));else if(f.id==='askForm'){if(questionBusy||s.preview)return;const account=s,seq=sequence,body=String(d.get('question')).trim();if(!body){dialog('မေးခွန်း ရေးပါ','ဆရာ့ကို မေးချင်တဲ့ အကြောင်းအရာကို ရေးပေးပါ။');return}questionBusy=true;const b=f.querySelector('button');b.disabled=true;b.textContent='Sending…';try{await Repo.ask(account,String(d.get('subject')),body);if(seq===sequence){go(askBack);dialog('Question sent','ဆရာ့ဆီ မေးခွန်း ပို့ပြီးပါပြီ။')}}catch(err){if(seq===sequence){if(err.revoked)logout(err.message);else dialog('မေးခွန်း ပို့လို့မရပါ',err.message)}}finally{if(seq===sequence){questionBusy=false;b.disabled=false;b.textContent='Send question'}}}});
+function setLoginStatus(message) {
+  const status = $('loginStatus');
+  if (!status) return;
+  status.hidden = !message;
+  status.textContent = message;
+}
+
+function setLoginBusy(busy) {
+  loginBusy = busy;
+  const form = $('loginForm');
+  if (!form) return;
+  const submit = form.querySelector('button[type="submit"]');
+  submit.disabled = busy;
+  submit.textContent = busy ? 'Signing in…' : 'Sign in';
+  form.parentElement.querySelector('[data-action="preview"]').disabled = busy;
+}
+
+function loginErrorMessage(error) {
+  if (error.name === 'AbortError') return 'အကောင့်စစ်ဆေးတာ ကြာနေပါတယ်။ Internet connection စစ်ပြီး ထပ်နှိပ်ပါ။';
+  if ([401, 403].includes(error.status)) return 'Student အကောင့်ကို စစ်ဆေးဖို့ Firebase က ခွင့်မပြုပါ။ ဆရာ့ကို အကြောင်းကြားပါ။';
+  if (error instanceof TypeError || error.status) return 'အကောင့်စစ်ဆေးလို့ မရသေးပါ။ Internet connection စစ်ပြီး ထပ်နှိပ်ပါ။';
+  if (['SecurityError', 'QuotaExceededError'].includes(error.name)) return 'ဒီ browser မှာ အကောင့်ကို သိမ်းလို့မရပါ။ Browser storage ကို စစ်ပြီး ထပ်ဝင်ပါ။';
+  return error.message || 'ဝင်လို့မရပါ။ ခဏနေရင် ထပ်စမ်းပါ။';
+}
+
+async function submitLogin(form) {
+  if (loginBusy) return;
+  const id = form.elements.namedItem('id');
+  const password = form.elements.namedItem('password');
+  const studentId = id.value.trim();
+  const studentPassword = password.value;
+  const missing = !studentId ? id : !studentPassword ? password : null;
+  if (missing) {
+    missing.setAttribute('aria-invalid', 'true');
+    setLoginStatus(missing === id ? 'Student ID ထည့်ပါ။' : 'Password ထည့်ပါ။');
+    missing.focus();
+    return;
+  }
+  if (document.activeElement === id || document.activeElement === password) document.activeElement.blur();
+  setLoginBusy(true);
+  setLoginStatus(loginPendingMessage);
+  try {
+    const account = await Repo.login(studentId, studentPassword);
+    Repo.put(['session'], account);
+    restore(account);
+    go('home');
+    refresh();
+  } catch (error) {
+    setLoginStatus(loginErrorMessage(error));
+  } finally {
+    setLoginBusy(false);
+  }
+}
+
+document.addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target;
+  // The Student ID input is named "id", which shadows the form's id property.
+  if (f === $('loginForm')) {
+    await submitLogin(f);
+    return;
+  }
+  const d = new FormData(f);
+  if(f.id==='blankForm')choose(d.get('answer'));else if(f.id==='askForm'){if(questionBusy||s.preview)return;const account=s,seq=sequence,body=String(d.get('question')).trim();if(!body){dialog('မေးခွန်း ရေးပါ','ဆရာ့ကို မေးချင်တဲ့ အကြောင်းအရာကို ရေးပေးပါ။');return}questionBusy=true;const b=f.querySelector('button');b.disabled=true;b.textContent='Sending…';try{await Repo.ask(account,String(d.get('subject')),body);if(seq===sequence){go(askBack);dialog('Question sent','ဆရာ့ဆီ မေးခွန်း ပို့ပြီးပါပြီ။')}}catch(err){if(seq===sequence){if(err.revoked)logout(err.message);else dialog('မေးခွန်း ပို့လို့မရပါ',err.message)}}finally{if(seq===sequence){questionBusy=false;b.disabled=false;b.textContent='Send question'}}}});
 window.addEventListener('online',()=>{refresh();if(page==='classroom')refreshNotes()});document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&s&&!s.preview)refresh()});
 window.addEventListener('storage',e=>{if(s&&e.key?.startsWith('edunova:v24:result:')&&page==='quiz'&&selected&&result(selected))openResult(selected.id,'practice')});
 restore(Repo.get(['session']));history.replaceState({edu:'start'},'',location.pathname+location.search);setTimeout(()=>{$('intro').hidden=true;$('app').hidden=false;go(s?'home':'login',false);if(s)refresh()},pref('animations',true)&&!matchMedia('(prefers-reduced-motion: reduce)').matches?950:0);
